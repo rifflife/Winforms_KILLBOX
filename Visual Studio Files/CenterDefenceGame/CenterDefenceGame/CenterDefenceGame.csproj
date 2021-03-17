@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A4A09F8-0C9E-473A-BF58-BE5E533425BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CenterDefenceGame</RootNamespace>
+    <AssemblyName>CenterDefenceGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameObject\DataTable.cs" />
+    <Compile Include="GameObject\DrawObject\Buttons\Button.cs" />
+    <Compile Include="GameObject\Camera.cs" />
+    <Compile Include="GameObject\DrawObject\GUI.cs" />
+    <Compile Include="GameObject\EnemyList.cs" />
+    <Compile Include="GameObject\DrawObject\DeadEffect.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_11_BigOrangeBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_14_BigRedBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_15_BigPurpleBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_16_BigWhiteBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_17_BigBlackBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_18_BigRainbowBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_13_BigBlueBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_12_BigBrownBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_10_BigGreenBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_2_SmallOrangeBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_3_SmallBrownBox.cs" />
+    <Compile Include="GameObject\EnemyObject\EnemyType.cs" />
+    <Compile Include="GameObject\EnemyObject\EnemyCustom.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_4_SmallBlueBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_1_SmallGreenBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_8_SmallBlackBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_9_SmallRainbowBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_7_SmallWhiteBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_6_SmallPurpleBox.cs" />
+    <Compile Include="GameObject\EnemyObject\Enemy_5_SmallRedBox.cs" />
+    <Compile Include="GameObject\GameManager.cs" />
+    <Compile Include="GameObject\DrawObject\Buttons\ImageButton.cs" />
+    <Compile Include="GameObject\LevelObject\LevelManager.cs" />
+    <Compile Include="GameObject\Page\EndPage.cs" />
+    <Compile Include="GameObject\Page\PausePage.cs" />
+    <Compile Include="GameObject\PlayerBulletList.cs" />
+    <Compile Include="GameObject\LevelObject\Map.cs" />
+    <Compile Include="GameObject\Player.cs" />
+    <Compile Include="GameObject\DrawObject\Polygon2D.cs" />
+    <Compile Include="GameObject\DrawObject\Vector2D.cs" />
+    <Compile Include="GameObject\PlayerBullet.cs" />
+    <Compile Include="GameObject\Page\ShopPage.cs" />
+    <Compile Include="GameObject\Page\StartPage.cs" />
+    <Compile Include="GameObject\DrawObject\Buttons\TextButton.cs" />
+    <Compile Include="GameObject\VirtualMouse.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="ReadMe.Txt" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
