@@ -15,7 +15,7 @@ It's made for Korean college assignment.
 So I didn't make some kind of multi language structure.
 It's my big mistake, so please understand this problem.
 
-
+이 게임은 Winforms로 만들어졌습니다.
 이 게임은 대학 과제를 위해서 만들어졌습니다.
 1학년 과제를 위해 만들어졌기 때문에 미숙한 부분이 많습니다.
 
