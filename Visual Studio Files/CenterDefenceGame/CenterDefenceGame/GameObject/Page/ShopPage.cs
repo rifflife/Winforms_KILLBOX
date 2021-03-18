@@ -146,14 +146,14 @@ namespace CenterDefenceGame.GameObject.Page
 
 			#region Shop Section
 
-			this.CloseShopButton = new TextButton(Manager, CloseShop, true, 0, 150, 200, 50, "상점 나가기", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
-			this.OpenShopButton  = new TextButton(Manager, OpenShop, true, -210, 150, 200, 50, "상점", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
-			this.NextWaveButton  = new TextButton(Manager, Manager.GoNextWave, true, 0, 150, 200, 50, "웨이브 시작", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
-			this.SetBuildModeButton = new TextButton(Manager, SetBuildMode, true, 210, 150, 200, 50, "건설", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
+			this.CloseShopButton = new TextButton(Manager, CloseShop, true, 0, 150, 200, 50, "상점 나가기", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
+			this.OpenShopButton  = new TextButton(Manager, OpenShop, true, -210, 150, 200, 50, "상점", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
+			this.NextWaveButton  = new TextButton(Manager, Manager.GoNextWave, true, 0, 150, 200, 50, "웨이브 시작", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
+			this.SetBuildModeButton = new TextButton(Manager, SetBuildMode, true, 210, 150, 200, 50, "건설", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
 
 			#endregion
 			
-			this.ReturnButton = new TextButton(Manager, ReturnShop, true, 0, 150, 200, 50, "돌아가기", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
+			this.ReturnButton = new TextButton(Manager, ReturnShop, true, 0, 150, 200, 50, "돌아가기", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
 			this.CoreButton   = new ImageButton(Manager, OpenCoreUpgrade, true, 200, 0, ShopIconCore.Width, ShopIconCore.Height, ShopIconCore, 1f, EDock.Center, EDock.Center);
 			this.WeaponButton = new ImageButton(Manager, OpenWeaponUpgrade, true, -200, 0, ShopIconWeapon.Width, ShopIconWeapon.Height, ShopIconWeapon, 1f, EDock.Center, EDock.Center);
 
@@ -166,10 +166,10 @@ namespace CenterDefenceGame.GameObject.Page
 			dockY3 = dockY2 + distanceY;
 			dockY4 = dockY3 + distanceY;
 
-			ButtonsWeapon1[0] = new TextButton(Manager, UpgradeLeftFireRate , true, dockX, dockY1, bWidth, bHeight, "강화", "맑은 고딕", fontSize, EDock.Center, EDock.Center);
-			ButtonsWeapon1[1] = new TextButton(Manager, UpgradeLeftDamage   , true, dockX, dockY2, bWidth, bHeight, "강화", "맑은 고딕", fontSize, EDock.Center, EDock.Center);
-			ButtonsWeapon1[2] = new TextButton(Manager, UpgradeLeftRecoil   , true, dockX, dockY3, bWidth, bHeight, "강화", "맑은 고딕", fontSize, EDock.Center, EDock.Center);
-			ButtonsWeapon1[3] = new TextButton(Manager, UpgradeLeftExtension, true, dockX, dockY4, bWidth, bHeight, "강화", "맑은 고딕", fontSize, EDock.Center, EDock.Center);
+			ButtonsWeapon1[0] = new TextButton(Manager, UpgradeLeftFireRate , true, dockX, dockY1, bWidth, bHeight, "강화", GameFont.GAME_FONT, fontSize, EDock.Center, EDock.Center);
+			ButtonsWeapon1[1] = new TextButton(Manager, UpgradeLeftDamage   , true, dockX, dockY2, bWidth, bHeight, "강화", GameFont.GAME_FONT, fontSize, EDock.Center, EDock.Center);
+			ButtonsWeapon1[2] = new TextButton(Manager, UpgradeLeftRecoil   , true, dockX, dockY3, bWidth, bHeight, "강화", GameFont.GAME_FONT, fontSize, EDock.Center, EDock.Center);
+			ButtonsWeapon1[3] = new TextButton(Manager, UpgradeLeftExtension, true, dockX, dockY4, bWidth, bHeight, "강화", GameFont.GAME_FONT, fontSize, EDock.Center, EDock.Center);
 			
 			NameTextWeapon1 = new Bitmap[4];
 
@@ -178,10 +178,10 @@ namespace CenterDefenceGame.GameObject.Page
 			ntDockY3 = dockY3 - (ntHeight / 2);
 			ntDockY4 = dockY4 - (ntHeight / 2);
 
-			NameTextWeapon1[0] = Manager.GetTextBitmap("연사력", penWidth, Color.White, Color.Black, ntWidth, ntHeight, "맑은 고딕", (int)FontStyle.Bold, ntFontSize, -1);
-			NameTextWeapon1[1] = Manager.GetTextBitmap("공격력", penWidth, Color.White, Color.Black, ntWidth, ntHeight, "맑은 고딕", (int)FontStyle.Bold, ntFontSize, -1);
-			NameTextWeapon1[2] = Manager.GetTextBitmap("반　동", penWidth, Color.White, Color.Black, ntWidth, ntHeight, "맑은 고딕", (int)FontStyle.Bold, ntFontSize, -1);
-			NameTextWeapon1[3] = Manager.GetTextBitmap("총　열", penWidth, Color.White, Color.Black, ntWidth, ntHeight, "맑은 고딕", (int)FontStyle.Bold, ntFontSize, -1);
+			NameTextWeapon1[0] = Manager.GetTextBitmap("연사력", penWidth, Color.White, Color.Black, ntWidth, ntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, ntFontSize, -1);
+			NameTextWeapon1[1] = Manager.GetTextBitmap("공격력", penWidth, Color.White, Color.Black, ntWidth, ntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, ntFontSize, -1);
+			NameTextWeapon1[2] = Manager.GetTextBitmap("반　동", penWidth, Color.White, Color.Black, ntWidth, ntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, ntFontSize, -1);
+			NameTextWeapon1[3] = Manager.GetTextBitmap("총　열", penWidth, Color.White, Color.Black, ntWidth, ntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, ntFontSize, -1);
 
 			ValueTextWeapon1 = new Bitmap[4];
 
@@ -189,10 +189,10 @@ namespace CenterDefenceGame.GameObject.Page
 			// Right Weapon Buttons and Text Bitmaps
 			ButtonsWeapon2 = new TextButton[4];
 			
-			ButtonsWeapon2[0] = new TextButton(Manager, UpgradeRightFireRate , true, rDockX, dockY1, bWidth, bHeight, "강화", "맑은 고딕", fontSize, EDock.Center, EDock.Center);
-			ButtonsWeapon2[1] = new TextButton(Manager, UpgradeRightDamage   , true, rDockX, dockY2, bWidth, bHeight, "강화", "맑은 고딕", fontSize, EDock.Center, EDock.Center);
-			ButtonsWeapon2[2] = new TextButton(Manager, UpgradeRightRecoil   , true, rDockX, dockY3, bWidth, bHeight, "강화", "맑은 고딕", fontSize, EDock.Center, EDock.Center);
-			ButtonsWeapon2[3] = new TextButton(Manager, UpgradeRightExtension, true, rDockX, dockY4, bWidth, bHeight, "강화", "맑은 고딕", fontSize, EDock.Center, EDock.Center);
+			ButtonsWeapon2[0] = new TextButton(Manager, UpgradeRightFireRate , true, rDockX, dockY1, bWidth, bHeight, "강화", GameFont.GAME_FONT, fontSize, EDock.Center, EDock.Center);
+			ButtonsWeapon2[1] = new TextButton(Manager, UpgradeRightDamage   , true, rDockX, dockY2, bWidth, bHeight, "강화", GameFont.GAME_FONT, fontSize, EDock.Center, EDock.Center);
+			ButtonsWeapon2[2] = new TextButton(Manager, UpgradeRightRecoil   , true, rDockX, dockY3, bWidth, bHeight, "강화", GameFont.GAME_FONT, fontSize, EDock.Center, EDock.Center);
+			ButtonsWeapon2[3] = new TextButton(Manager, UpgradeRightExtension, true, rDockX, dockY4, bWidth, bHeight, "강화", GameFont.GAME_FONT, fontSize, EDock.Center, EDock.Center);
 			
 			NameTextWeapon2 = new Bitmap[4];
 
@@ -201,10 +201,10 @@ namespace CenterDefenceGame.GameObject.Page
 			ntDockY3 = dockY3 - (ntHeight / 2);
 			ntDockY4 = dockY4 - (ntHeight / 2);
 
-			NameTextWeapon2[0] = Manager.GetTextBitmap("연사력", penWidth, Color.White, Color.Black, ntWidth, ntHeight, "맑은 고딕", (int)FontStyle.Bold, ntFontSize, -1);
-			NameTextWeapon2[1] = Manager.GetTextBitmap("공격력", penWidth, Color.White, Color.Black, ntWidth, ntHeight, "맑은 고딕", (int)FontStyle.Bold, ntFontSize, -1);
-			NameTextWeapon2[2] = Manager.GetTextBitmap("반　동", penWidth, Color.White, Color.Black, ntWidth, ntHeight, "맑은 고딕", (int)FontStyle.Bold, ntFontSize, -1);
-			NameTextWeapon2[3] = Manager.GetTextBitmap("펠　릿", penWidth, Color.White, Color.Black, ntWidth, ntHeight, "맑은 고딕", (int)FontStyle.Bold, ntFontSize, -1);
+			NameTextWeapon2[0] = Manager.GetTextBitmap("연사력", penWidth, Color.White, Color.Black, ntWidth, ntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, ntFontSize, -1);
+			NameTextWeapon2[1] = Manager.GetTextBitmap("공격력", penWidth, Color.White, Color.Black, ntWidth, ntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, ntFontSize, -1);
+			NameTextWeapon2[2] = Manager.GetTextBitmap("반　동", penWidth, Color.White, Color.Black, ntWidth, ntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, ntFontSize, -1);
+			NameTextWeapon2[3] = Manager.GetTextBitmap("펠　릿", penWidth, Color.White, Color.Black, ntWidth, ntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, ntFontSize, -1);
 
 			ValueTextWeapon2 = new Bitmap[4];
 
@@ -219,10 +219,10 @@ namespace CenterDefenceGame.GameObject.Page
 			CdockY3 = CdockY2 + CdistanceY;
 			CdockY4 = CdockY3 + CdistanceY;
 
-			ButtonsCore[0] = new TextButton(Manager, UpgradeCoreHealth  , true, CdockX, CdockY1, CbWidth, CbHeight, "강화", "맑은 고딕", CfontSize, EDock.Center, EDock.Center);
-			ButtonsCore[1] = new TextButton(Manager, UpgradeCoreRegen   , true, CdockX, CdockY2, CbWidth, CbHeight, "강화", "맑은 고딕", CfontSize, EDock.Center, EDock.Center);
-			ButtonsCore[2] = new TextButton(Manager, UpgradeCoreAmmo    , true, CdockX, CdockY3, CbWidth, CbHeight, "강화", "맑은 고딕", CfontSize, EDock.Center, EDock.Center);
-			ButtonsCore[3] = new TextButton(Manager, UpgradeCoreResource, true, CdockX, CdockY4, CbWidth, CbHeight, "강화", "맑은 고딕", CfontSize, EDock.Center, EDock.Center);
+			ButtonsCore[0] = new TextButton(Manager, UpgradeCoreHealth  , true, CdockX, CdockY1, CbWidth, CbHeight, "강화", GameFont.GAME_FONT, CfontSize, EDock.Center, EDock.Center);
+			ButtonsCore[1] = new TextButton(Manager, UpgradeCoreRegen   , true, CdockX, CdockY2, CbWidth, CbHeight, "강화", GameFont.GAME_FONT, CfontSize, EDock.Center, EDock.Center);
+			ButtonsCore[2] = new TextButton(Manager, UpgradeCoreAmmo    , true, CdockX, CdockY3, CbWidth, CbHeight, "강화", GameFont.GAME_FONT, CfontSize, EDock.Center, EDock.Center);
+			ButtonsCore[3] = new TextButton(Manager, UpgradeCoreResource, true, CdockX, CdockY4, CbWidth, CbHeight, "강화", GameFont.GAME_FONT, CfontSize, EDock.Center, EDock.Center);
 			
 			NameTextCore = new Bitmap[4];
 
@@ -231,10 +231,10 @@ namespace CenterDefenceGame.GameObject.Page
 			CntDockY3 = CdockY3 - (CntHeight / 2);
 			CntDockY4 = CdockY4 - (CntHeight / 2);
 
-			NameTextCore[0] = Manager.GetTextBitmap("코어체력", penWidth, Color.White, Color.Black, CntWidth, CntHeight, "맑은 고딕", (int)FontStyle.Bold, CntFontSize, -1);
-			NameTextCore[1] = Manager.GetTextBitmap("자동회복", penWidth, Color.White, Color.Black, CntWidth, CntHeight, "맑은 고딕", (int)FontStyle.Bold, CntFontSize, -1);
-			NameTextCore[2] = Manager.GetTextBitmap("탄약생산", penWidth, Color.White, Color.Black, CntWidth, CntHeight, "맑은 고딕", (int)FontStyle.Bold, CntFontSize, -1);
-			NameTextCore[3] = Manager.GetTextBitmap("자원생산", penWidth, Color.White, Color.Black, CntWidth, CntHeight, "맑은 고딕", (int)FontStyle.Bold, CntFontSize, -1);
+			NameTextCore[0] = Manager.GetTextBitmap("코어체력", penWidth, Color.White, Color.Black, CntWidth, CntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CntFontSize, -1);
+			NameTextCore[1] = Manager.GetTextBitmap("자동회복", penWidth, Color.White, Color.Black, CntWidth, CntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CntFontSize, -1);
+			NameTextCore[2] = Manager.GetTextBitmap("탄약생산", penWidth, Color.White, Color.Black, CntWidth, CntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CntFontSize, -1);
+			NameTextCore[3] = Manager.GetTextBitmap("자원생산", penWidth, Color.White, Color.Black, CntWidth, CntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CntFontSize, -1);
 
 			ValueTextCore = new Bitmap[4];
 
@@ -242,10 +242,10 @@ namespace CenterDefenceGame.GameObject.Page
 			// Right Player Buttons and Text Bitmaps
 			ButtonsPlayer = new TextButton[4];
 			
-			ButtonsPlayer[0] = new TextButton(Manager, UpgradePlayerHealth    , true, CrDockX, CdockY1, CbWidth, CbHeight, "강화", "맑은 고딕", CfontSize, EDock.Center, EDock.Center);
-			ButtonsPlayer[1] = new TextButton(Manager, UpgradePlayerRegen     , true, CrDockX, CdockY2, CbWidth, CbHeight, "강화", "맑은 고딕", CfontSize, EDock.Center, EDock.Center);
-			ButtonsPlayer[2] = new TextButton(Manager, UpgradeCoreAmmoHasRatio, true, CrDockX, CdockY3, CbWidth, CbHeight, "강화", "맑은 고딕", CfontSize, EDock.Center, EDock.Center);
-			ButtonsPlayer[3] = new TextButton(Manager, UpgradePlayerReborn    , true, CrDockX, CdockY4, CbWidth, CbHeight, "강화", "맑은 고딕", CfontSize, EDock.Center, EDock.Center);
+			ButtonsPlayer[0] = new TextButton(Manager, UpgradePlayerHealth    , true, CrDockX, CdockY1, CbWidth, CbHeight, "강화", GameFont.GAME_FONT, CfontSize, EDock.Center, EDock.Center);
+			ButtonsPlayer[1] = new TextButton(Manager, UpgradePlayerRegen     , true, CrDockX, CdockY2, CbWidth, CbHeight, "강화", GameFont.GAME_FONT, CfontSize, EDock.Center, EDock.Center);
+			ButtonsPlayer[2] = new TextButton(Manager, UpgradeCoreAmmoHasRatio, true, CrDockX, CdockY3, CbWidth, CbHeight, "강화", GameFont.GAME_FONT, CfontSize, EDock.Center, EDock.Center);
+			ButtonsPlayer[3] = new TextButton(Manager, UpgradePlayerReborn    , true, CrDockX, CdockY4, CbWidth, CbHeight, "강화", GameFont.GAME_FONT, CfontSize, EDock.Center, EDock.Center);
 			
 			NameTextPlayer = new Bitmap[4];
 
@@ -254,10 +254,10 @@ namespace CenterDefenceGame.GameObject.Page
 			CntDockY3 = CdockY3 - (CntHeight / 2);
 			CntDockY4 = CdockY4 - (CntHeight / 2);
 
-			NameTextPlayer[0] = Manager.GetTextBitmap("기체체력", penWidth, Color.White, Color.Black, CntWidth, CntHeight, "맑은 고딕", (int)FontStyle.Bold, CntFontSize, -1);
-			NameTextPlayer[1] = Manager.GetTextBitmap("자동회복", penWidth, Color.White, Color.Black, CntWidth, CntHeight, "맑은 고딕", (int)FontStyle.Bold, CntFontSize, -1);
-			NameTextPlayer[2] = Manager.GetTextBitmap("탄약소지", penWidth, Color.White, Color.Black, CntWidth, CntHeight, "맑은 고딕", (int)FontStyle.Bold, CntFontSize, -1);
-			NameTextPlayer[3] = Manager.GetTextBitmap("생성속도", penWidth, Color.White, Color.Black, CntWidth, CntHeight, "맑은 고딕", (int)FontStyle.Bold, CntFontSize, -1);
+			NameTextPlayer[0] = Manager.GetTextBitmap("기체체력", penWidth, Color.White, Color.Black, CntWidth, CntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CntFontSize, -1);
+			NameTextPlayer[1] = Manager.GetTextBitmap("자동회복", penWidth, Color.White, Color.Black, CntWidth, CntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CntFontSize, -1);
+			NameTextPlayer[2] = Manager.GetTextBitmap("탄약소지", penWidth, Color.White, Color.Black, CntWidth, CntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CntFontSize, -1);
+			NameTextPlayer[3] = Manager.GetTextBitmap("생성속도", penWidth, Color.White, Color.Black, CntWidth, CntHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CntFontSize, -1);
 
 			ValueTextPlayer = new Bitmap[4];
 
@@ -300,30 +300,30 @@ namespace CenterDefenceGame.GameObject.Page
 
 			int fireRate1 = DataTable.LeftWeaponFireRate[0, Manager.GamePlayer.LevelLeftWeaponFireRate];
 			string text = (3600 / fireRate1).ToString();
-			ValueTextWeapon1[0] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, "맑은 고딕", (int)FontStyle.Bold, vtFontSize, -1);
+			ValueTextWeapon1[0] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, vtFontSize, -1);
 
 			text =  DataTable.LeftWeaponDamage[0, Manager.GamePlayer.LevelLeftWeaponDamage].ToString();
-			ValueTextWeapon1[1] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, "맑은 고딕", (int)FontStyle.Bold, vtFontSize, -1);
+			ValueTextWeapon1[1] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, vtFontSize, -1);
 
 			text =  DataTable.LeftWeaponRecoil[0, Manager.GamePlayer.LevelLeftWeaponRecoil].ToString();
-			ValueTextWeapon1[2] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, "맑은 고딕", (int)FontStyle.Bold, vtFontSize, -1);
+			ValueTextWeapon1[2] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, vtFontSize, -1);
 
 			text =  DataTable.LeftWeaponExtension[0, Manager.GamePlayer.LevelLeftWeaponExtension].ToString();
-			ValueTextWeapon1[3] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, "맑은 고딕", (int)FontStyle.Bold, vtFontSize, -1);
+			ValueTextWeapon1[3] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, vtFontSize, -1);
 
 			
 			int fireRate2 = DataTable.RightWeaponFireRate[0, Manager.GamePlayer.LevelRightWeaponFireRate];
 			text = (3600 / fireRate2).ToString();
-			ValueTextWeapon2[0] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, "맑은 고딕", (int)FontStyle.Bold, vtFontSize, -1);
+			ValueTextWeapon2[0] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, vtFontSize, -1);
 
 			text =  DataTable.RightWeaponDamage[0, Manager.GamePlayer.LevelRightWeaponDamage].ToString();
-			ValueTextWeapon2[1] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, "맑은 고딕", (int)FontStyle.Bold, vtFontSize, -1);
+			ValueTextWeapon2[1] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, vtFontSize, -1);
 
 			text =  DataTable.RightWeaponRecoil[0, Manager.GamePlayer.LevelRightWeaponRecoil].ToString();
-			ValueTextWeapon2[2] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, "맑은 고딕", (int)FontStyle.Bold, vtFontSize, -1);
+			ValueTextWeapon2[2] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, vtFontSize, -1);
 
 			text =  DataTable.RightWeaponExtension[0, Manager.GamePlayer.LevelRightWeaponExtension].ToString();
-			ValueTextWeapon2[3] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, "맑은 고딕", (int)FontStyle.Bold, vtFontSize, -1);
+			ValueTextWeapon2[3] = Manager.GetTextBitmap(text, penWidth, Color.Yellow, Color.Black, vtWidth, vtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, vtFontSize, -1);
 
 			#endregion
 
@@ -332,12 +332,12 @@ namespace CenterDefenceGame.GameObject.Page
 			// Core Section
 			StringBuilder cText = new StringBuilder();
 			cText.Append(DataTable.CoreHealth[0, Manager.GameMap.LevelCoreHealth]);
-			ValueTextCore[0] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, "맑은 고딕", (int)FontStyle.Bold, CvtFontSize, -1);
+			ValueTextCore[0] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CvtFontSize, -1);
 
 			cText.Clear();
 			cText.Append(DataTable.CoreRegen[0, Manager.GameMap.LevelCoreRegen]);
 			cText.Append("(초당)");
-			ValueTextCore[1] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, "맑은 고딕", (int)FontStyle.Bold, CvtFontSize, -1);
+			ValueTextCore[1] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CvtFontSize, -1);
 			
 			cText.Clear();
 			int second = DataTable.CoreGenerateAmmunitionMakeTime[0, Manager.GameMap.LevelCoreAmmunitionMakeTime];
@@ -346,32 +346,32 @@ namespace CenterDefenceGame.GameObject.Page
 			cText.Append('.');
 			cText.Append(second % 10);
 			cText.Append("초");
-			ValueTextCore[2] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, "맑은 고딕", (int)FontStyle.Bold, CvtFontSize, -1);
+			ValueTextCore[2] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CvtFontSize, -1);
 			
 			cText.Clear();
 			cText.Append(DataTable.CoreGenerateResourceRatio[0, Manager.GameMap.LevelCoreResourceRatio]);
 			cText.Append("%");
-			ValueTextCore[3] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, "맑은 고딕", (int)FontStyle.Bold, CvtFontSize, -1);
+			ValueTextCore[3] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CvtFontSize, -1);
 
 			// Player Section
 			cText.Clear();
 			cText.Append(DataTable.PlayerHealth[0, Manager.GamePlayer.LevelPlayerHealth]);
-			ValueTextPlayer[0] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, "맑은 고딕", (int)FontStyle.Bold, CvtFontSize, -1);
+			ValueTextPlayer[0] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CvtFontSize, -1);
 
 			cText.Clear();
 			cText.Append(DataTable.PlayerRegen[0, Manager.GamePlayer.LevelPlayerRegen]);
 			cText.Append("(초당)");
-			ValueTextPlayer[1] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, "맑은 고딕", (int)FontStyle.Bold, CvtFontSize, -1);
+			ValueTextPlayer[1] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CvtFontSize, -1);
 			
 			cText.Clear();
 			cText.Append(DataTable.CoreAmmoHasRatio[0, Manager.GameMap.LevelCoreAmmoHaveRatio]);
 			cText.Append("%");
-			ValueTextPlayer[2] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, "맑은 고딕", (int)FontStyle.Bold, CvtFontSize, -1);
+			ValueTextPlayer[2] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CvtFontSize, -1);
 			
 			cText.Clear();
 			cText.Append(DataTable.PlayerRebornTime[0, Manager.GamePlayer.LevelPlayerReborn]);
 			cText.Append("초");
-			ValueTextPlayer[3] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, "맑은 고딕", (int)FontStyle.Bold, CvtFontSize, -1);
+			ValueTextPlayer[3] = Manager.GetTextBitmap(cText.ToString(), penWidth, Color.Yellow, Color.Black, CvtWidth, CvtHeight, GameFont.GAME_FONT, (int)FontStyle.Bold, CvtFontSize, -1);
 
 			#endregion
 		}
@@ -515,7 +515,7 @@ namespace CenterDefenceGame.GameObject.Page
 				else
 				{
 					using(StringFormat sf = new StringFormat())
-					using(Font font = new Font("맑은 고딕", 20))
+					using(Font font = new Font(GameFont.GAME_FONT, 20))
 					{
 						graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
 

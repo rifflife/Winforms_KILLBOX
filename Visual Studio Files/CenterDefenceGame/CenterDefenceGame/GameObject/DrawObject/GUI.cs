@@ -111,7 +111,7 @@ namespace CenterDefenceGame.GameObject.DrawObject
 		// Notification will be added bottom to top
 		private int				NotificationOffset = 20;
 
-		private string			NotificationFontName = "맑은 고딕";
+		private string			NotificationFontName = GameFont.GAME_FONT;
 		private int				NotificationFontSize = 14;
 
 		#endregion
@@ -311,7 +311,7 @@ namespace CenterDefenceGame.GameObject.DrawObject
 			this.EnemyBitmapHeight	= this.EnemyFontSize + 10;
 			this.EnemyBitmap		= new Bitmap(this.EnemyBitmapWidth, this.EnemyBitmapHeight);
 			this.EnemyFontName		= "Arial";
-			EnemyCounterText = this.Manager.GetTextBitmap("대기중인 적", 3, Color.White, ForegroundColor, this.EnemyBitmapWidth, 20, "맑은 고딕", (int)FontStyle.Bold, 15, 0);
+			EnemyCounterText = this.Manager.GetTextBitmap("대기중인 적", 3, Color.White, ForegroundColor, this.EnemyBitmapWidth, 20, GameFont.GAME_FONT, (int)FontStyle.Bold, 15, 0);
 
 			#endregion
 		}

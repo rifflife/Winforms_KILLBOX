@@ -296,7 +296,7 @@ namespace CenterDefenceGame.GameObject.LevelObject
 
 			#region Initialize Build Mode GUI
 
-			this.CancelBuildModeButton = new TextButton(gameManager, this.CancelBuildMode, true, 75, 75, 100, 100, "건설\n취소", "맑은 고딕", 30, EDock.Right, EDock.Bottom);
+			this.CancelBuildModeButton = new TextButton(gameManager, this.CancelBuildMode, true, 75, 75, 100, 100, "건설\n취소", GameFont.GAME_FONT, 30, EDock.Right, EDock.Bottom);
 
 			int bWidth = 60;
 			this.SelectWallButton = 

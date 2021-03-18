@@ -26,8 +26,8 @@ namespace CenterDefenceGame.GameObject.Page
 		public EndPage(GameManager gameManager)
 		{
 			this.Manager = gameManager;
-			this.GameRestartButton = new TextButton(this.Manager, RestartGame, true, 0, 250, 230, 50, "다시 하기", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
-			this.GameCloseButton  = new TextButton(this.Manager, CloseGame, true, 0, 190, 230, 50, "게임 종료", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
+			this.GameRestartButton = new TextButton(this.Manager, RestartGame, true, 0, 250, 230, 50, "다시 하기", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
+			this.GameCloseButton  = new TextButton(this.Manager, CloseGame, true, 0, 190, 230, 50, "게임 종료", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
 
 			#region Initialize Victory Title and Text 
 
@@ -49,7 +49,7 @@ namespace CenterDefenceGame.GameObject.Page
 							sf.Alignment	 = StringAlignment.Center;
 							sf.LineAlignment = StringAlignment.Center;
 
-							using(FontFamily fm = new FontFamily("맑은 고딕"))
+							using(FontFamily fm = new FontFamily(GameFont.GAME_FONT))
 							{
 								titlePath.AddString("VICTORY", fm, (int)FontStyle.Italic, 100, titlePosition, sf);
 							}
@@ -70,7 +70,7 @@ namespace CenterDefenceGame.GameObject.Page
 			this.VictoryTitleTextBitmap = victoryBitmap;
 
 			string victoryContents = "승리했습니다 !\n플레이해주셔서 감사합니다.";
-			this.VictoryTextBitmap = this.Manager.GetTextBitmap(victoryContents, 4, Color.White, Color.Black, 400, 120, "맑은 고딕", 0, 20, 0);
+			this.VictoryTextBitmap = this.Manager.GetTextBitmap(victoryContents, 4, Color.White, Color.Black, 400, 120, GameFont.GAME_FONT, 0, 20, 0);
 
 			#endregion
 			
@@ -94,7 +94,7 @@ namespace CenterDefenceGame.GameObject.Page
 							sf.Alignment	 = StringAlignment.Center;
 							sf.LineAlignment = StringAlignment.Center;
 
-							using(FontFamily fm = new FontFamily("맑은 고딕"))
+							using(FontFamily fm = new FontFamily(GameFont.GAME_FONT))
 							{
 								titlePath.AddString("DEFEAT", fm, (int)FontStyle.Italic, 100, titlePosition, sf);
 							}
@@ -115,7 +115,7 @@ namespace CenterDefenceGame.GameObject.Page
 			this.DefeatTitleTextBitmap = defeatBitmap;
 
 			string defeatContents = "패배했습니다 !\n다시 도전해보세요 !";
-			this.DefeatTextBitmap = this.Manager.GetTextBitmap(defeatContents, 4, Color.White, Color.Black, 400, 120, "맑은 고딕", 0, 20, 0);
+			this.DefeatTextBitmap = this.Manager.GetTextBitmap(defeatContents, 4, Color.White, Color.Black, 400, 120, GameFont.GAME_FONT, 0, 20, 0);
 
 			#endregion
 		}

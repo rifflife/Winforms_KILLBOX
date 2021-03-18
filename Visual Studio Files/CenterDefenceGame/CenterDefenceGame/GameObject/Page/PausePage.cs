@@ -22,11 +22,11 @@ namespace CenterDefenceGame.GameObject.Page
 		public PausePage(GameManager gameManager)
 		{
 			this.Manager = gameManager;
-			this.GameResumeButton = new TextButton(this.Manager, ResumeGame, true, 0, 280, 230, 50, "돌아가기", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
-			this.GameRestart  = new TextButton(this.Manager, this.Manager.Reset, true, 0, 220, 230, 50, "재시작", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
-			this.GameCloseButton  = new TextButton(this.Manager, CloseGame, true, 0, 160, 230, 50, "게임 종료", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
+			this.GameResumeButton = new TextButton(this.Manager, ResumeGame, true, 0, 280, 230, 50, "돌아가기", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
+			this.GameRestart  = new TextButton(this.Manager, this.Manager.Reset, true, 0, 220, 230, 50, "재시작", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
+			this.GameCloseButton  = new TextButton(this.Manager, CloseGame, true, 0, 160, 230, 50, "게임 종료", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
 
-			this.TextBitmap = this.Manager.GetTextBitmap("일시 정지", 3, Color.White, Color.White, 400, 120, "맑은 고딕", (int)FontStyle.Italic, 70, 0);
+			this.TextBitmap = this.Manager.GetTextBitmap("일시 정지", 3, Color.White, Color.White, 400, 120, GameFont.GAME_FONT, (int)FontStyle.Italic, 70, 0);
 		}
 
 		public void Reset()

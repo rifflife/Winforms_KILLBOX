@@ -49,6 +49,7 @@
     <Compile Include="GameObject\DataTable.cs" />
     <Compile Include="GameObject\DrawObject\Buttons\Button.cs" />
     <Compile Include="GameObject\Camera.cs" />
+    <Compile Include="GameObject\DrawObject\Buttons\GameFont.cs" />
     <Compile Include="GameObject\DrawObject\GUI.cs" />
     <Compile Include="GameObject\EnemyList.cs" />
     <Compile Include="GameObject\DrawObject\DeadEffect.cs" />

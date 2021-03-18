@@ -8,3 +8,13 @@ C:\Users\RiffLife\Desktop\청강대 온라인 수업 내용\2 학기\1. 월요�
 C:\Users\RiffLife\Desktop\청강대 온라인 수업 내용\2 학기\1. 월요일 윈도우프로그래밍 이세훈 E\기말고사 2020-12-05\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.csproj.CoreCompileInputs.cache
 C:\Users\RiffLife\Desktop\청강대 온라인 수업 내용\2 학기\1. 월요일 윈도우프로그래밍 이세훈 E\기말고사 2020-12-05\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.exe
 C:\Users\RiffLife\Desktop\청강대 온라인 수업 내용\2 학기\1. 월요일 윈도우프로그래밍 이세훈 E\기말고사 2020-12-05\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.pdb
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\bin\Release\CenterDefenceGame.exe.config
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\bin\Release\CenterDefenceGame.exe
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\bin\Release\CenterDefenceGame.pdb
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.csprojAssemblyReference.cache
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.Main.resources
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.Properties.Resources.resources
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.csproj.GenerateResource.cache
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.csproj.CoreCompileInputs.cache
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.exe
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.pdb

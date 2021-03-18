@@ -22,8 +22,8 @@ namespace CenterDefenceGame.GameObject.Page
 		public StartPage(GameManager gameManager)
 		{
 			this.Manager = gameManager;
-			this.GameStartButton = new TextButton(this.Manager, StartGame, true, 0, 250, 230, 50, "게임 시작", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
-			this.GameCloseButton  = new TextButton(this.Manager, CloseGame, true, 0, 190, 230, 50, "게임 종료", "맑은 고딕", 30, EDock.Center, EDock.Bottom);
+			this.GameStartButton = new TextButton(this.Manager, StartGame, true, 0, 250, 230, 50, "게임 시작", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
+			this.GameCloseButton  = new TextButton(this.Manager, CloseGame, true, 0, 190, 230, 50, "게임 종료", GameFont.GAME_FONT, 30, EDock.Center, EDock.Bottom);
 
 			#region Initialize Title Text and Start Infomation Text 
 
@@ -45,7 +45,7 @@ namespace CenterDefenceGame.GameObject.Page
 							sf.Alignment	 = StringAlignment.Center;
 							sf.LineAlignment = StringAlignment.Center;
 
-							using(FontFamily fm = new FontFamily("맑은 고딕"))
+							using(FontFamily fm = new FontFamily(GameFont.GAME_FONT))
 							{
 								titlePath.AddString("KILL BOX", fm, (int)FontStyle.Italic, 100, titlePosition, sf);
 							}
@@ -66,7 +66,7 @@ namespace CenterDefenceGame.GameObject.Page
 			this.TitleTextBitmap = bitmap;
 
 			string contents = "게임 플레이 방법은 별도의 문서로 첨부했습니다.\n30 웨이브까지 도전해보세요.\n\n- 202013207 최지욱- ";
-			this.TextBitmap = this.Manager.GetTextBitmap(contents, 4, Color.White, Color.Black, 500, 120, "맑은 고딕", 0, 20, 0);
+			this.TextBitmap = this.Manager.GetTextBitmap(contents, 4, Color.White, Color.Black, 500, 120, GameFont.GAME_FONT, 0, 20, 0);
 
 			#endregion
 		}

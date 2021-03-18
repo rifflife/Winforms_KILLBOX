@@ -18,3 +18,13 @@ C:\Users\RiffLife\Desktop\원도우프로그래밍_기말고사_과제평가_최
 C:\Users\RiffLife\Desktop\원도우프로그래밍_기말고사_과제평가_최지욱_E반_202013207\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.csproj.CoreCompileInputs.cache
 C:\Users\RiffLife\Desktop\원도우프로그래밍_기말고사_과제평가_최지욱_E반_202013207\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.exe
 C:\Users\RiffLife\Desktop\원도우프로그래밍_기말고사_과제평가_최지욱_E반_202013207\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.pdb
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\bin\Debug\CenterDefenceGame.exe.config
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\bin\Debug\CenterDefenceGame.exe
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\bin\Debug\CenterDefenceGame.pdb
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.csprojAssemblyReference.cache
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.Main.resources
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.Properties.Resources.resources
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.csproj.GenerateResource.cache
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.csproj.CoreCompileInputs.cache
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.exe
+C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Debug\CenterDefenceGame.pdb
