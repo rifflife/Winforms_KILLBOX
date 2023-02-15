@@ -18,3 +18,14 @@ C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files
 C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.csproj.CoreCompileInputs.cache
 C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.exe
 C:\Users\RiffLife\Documents\Programming\Git\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.pdb
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\bin\Release\CenterDefenceGame.exe.config
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\bin\Release\CenterDefenceGame.exe
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\bin\Release\CenterDefenceGame.pdb
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.csproj.AssemblyReference.cache
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.csproj.SuggestedBindingRedirects.cache
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.Main.resources
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.Properties.Resources.resources
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.csproj.GenerateResource.cache
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.csproj.CoreCompileInputs.cache
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.exe
+D:\Github\Winforms_KILLBOX\Visual Studio Files\CenterDefenceGame\CenterDefenceGame\obj\Release\CenterDefenceGame.pdb

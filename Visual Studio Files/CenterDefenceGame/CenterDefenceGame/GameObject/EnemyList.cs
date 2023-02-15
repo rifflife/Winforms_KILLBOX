@@ -122,6 +122,8 @@ namespace CenterDefenceGame.GameObject
 
 		public void Update(float deltaRatio)
 		{
+			long ts_entity = DateTime.Now.Ticks;
+
 			// Update Enemies
 			for (int index = 0; index < this.MaxCount; index ++)
 			{
@@ -138,7 +140,11 @@ namespace CenterDefenceGame.GameObject
 					}
 				}
 			}
-			
+
+			Manager.DeltaTime_EntityUpdates = DateTime.Now.Ticks - ts_entity;
+
+			long ts_ray = DateTime.Now.Ticks;
+
 			#region Bullet Collision Detection
 			
 			for (int index = 0; index < this.MaxCount; index ++)
@@ -184,6 +190,10 @@ namespace CenterDefenceGame.GameObject
 			}
 
 			#endregion
+
+			Manager.DeltaTime_Raycast = DateTime.Now.Ticks - ts_ray;
+
+			long ts_col = DateTime.Now.Ticks;
 
 			#region Push Each Others
 
@@ -242,6 +252,8 @@ namespace CenterDefenceGame.GameObject
 			}
 
 			#endregion
+
+			Manager.DeltaTime_CollisionDetection = DateTime.Now.Ticks - ts_col;
 		}
 
 		public void Draw(Graphics graphics)

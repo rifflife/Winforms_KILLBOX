@@ -8,6 +8,7 @@ namespace CenterDefenceGame.GameObject.DrawObject
 {
 	class GameFont
 	{
-		public const string GAME_FONT = "Noto Sans CJK KR Bold";
+		public const string GAME_FONT = "Arial";
+		public const string FONT_DEBUG = "견고딕";
 	}
 }

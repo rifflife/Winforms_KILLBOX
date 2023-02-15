@@ -1650,7 +1650,7 @@ namespace CenterDefenceGame.GameObject.LevelObject
 		{
 			int cameraX = this.Manager.GameCamera.GetX();
 			int cameraY = this.Manager.GameCamera.GetY();
-			Font textFont = new Font("견고딕", 10);
+			Font textFont = new Font(GameFont.FONT_DEBUG, 10);
 			StringFormat stringFormat = new StringFormat();
 			stringFormat.Alignment = StringAlignment.Center;
 			stringFormat.LineAlignment = StringAlignment.Center;

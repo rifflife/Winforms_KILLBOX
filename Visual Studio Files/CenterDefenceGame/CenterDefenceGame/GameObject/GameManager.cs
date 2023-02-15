@@ -165,6 +165,14 @@ namespace CenterDefenceGame.GameObject
 
 		#endregion
 
+		#region Debug
+
+		public long DeltaTime_CollisionDetection = 0;
+		public long DeltaTime_Raycast = 0;
+		public long DeltaTime_EntityUpdates = 0;
+
+		#endregion
+
 		public GameManager(Main main)
 		{
 			this.MainForm = main;
@@ -547,6 +555,11 @@ namespace CenterDefenceGame.GameObject
 			}
 
 			// Draw Debug Infomation
+			if (MainForm.IsDebugging)
+			{
+				this.GameGUI.DrawDebug(graphics);
+			}
+
 			if (this.MainForm.IsDebugging && this.IsDebugInfoOn)
 			{
 				this.GameMap.DrawDebugInfo(graphics);
@@ -1188,7 +1201,7 @@ namespace CenterDefenceGame.GameObject
 					point.X = width - 5;
 				}
 
-				using(StringFormat sf = new StringFormat())
+				using (StringFormat sf = new StringFormat())
 				using(FontFamily ff = new FontFamily(fontName))
 				{
 					if (alignCenter == 0)

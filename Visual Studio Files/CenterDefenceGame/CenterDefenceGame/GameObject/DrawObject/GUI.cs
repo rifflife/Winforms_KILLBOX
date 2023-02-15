@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -328,6 +329,28 @@ namespace CenterDefenceGame.GameObject.DrawObject
 			this.SetEnemyCounter();
 		}
 
+		public void DrawDebug(Graphics g)
+		{
+			using (Font f = new Font(GameFont.FONT_DEBUG, 10))
+			using (StringFormat sf = new StringFormat())
+			using (Pen p = new Pen(Color.White, 1))
+			{
+				sf.Alignment = StringAlignment.Near;
+				sf.LineAlignment = StringAlignment.Center;
+
+				int offset = 100;
+				int offset_y = 15;
+
+				//g.DrawRectangle(p, x * CellSize - cameraX, y * CellSize - cameraY, CellSize, CellSize);
+				g.DrawRectangle(p, offset, 0, 300, 100);
+				g.DrawString($"Entity Updates : {Manager.DeltaTime_EntityUpdates} ticks",
+							 f, Brushes.White, offset + 10, 10, sf);
+				g.DrawString($"Collision : {Manager.DeltaTime_CollisionDetection} ticks",
+							 f, Brushes.White, offset + 10, 10 + offset_y, sf);
+				g.DrawString($"Raycast : {Manager.DeltaTime_Raycast} ticks",
+							 f, Brushes.White, offset + 10, 10 + offset_y * 2, sf);
+			}
+		}
 		public void DrawHMD(Graphics graphics)
 		{
 			#region Draw Health Bar And Core Bar
