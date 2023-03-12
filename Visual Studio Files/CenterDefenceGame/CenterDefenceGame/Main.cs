@@ -84,21 +84,28 @@ namespace CenterDefenceGame
 			
 			this.Activate();
 
-			/////////////////////////////////////////////////////////////////
-			///////////////////////////TEST///////////////////////////////////
-			this.GameTick.Interval = 1;
-		}
+        }
 
-		public Task update()
+		private bool _isLoaded = false;
+        private void Main_Load(object sender, EventArgs e)
         {
-			Thread.Sleep(1000);
-            while (true)
+			if (_isLoaded)
+				return;
+			_isLoaded = true;
+
+            Thread t = new Thread(() =>
             {
-                this.InvokeControl(() =>
+                while (true)
                 {
-                    UpdateGame();
-                });
-            }
+                    this?.InvokeControl(() =>
+                    {
+                        this?.UpdateGame();
+                    });
+                    Thread.Sleep(1);
+                }
+            });
+            t.IsBackground = false;
+            t.Start();
         }
 
         protected override void OnPaintBackground(PaintEventArgs e)	{}
@@ -150,11 +157,6 @@ namespace CenterDefenceGame
 		}
 
 		#endregion
-
-		private void GameTick_Tick(object sender, EventArgs e)
-		{
-            //UpdateGame();
-        }
 
         public void UpdateGame()
         {

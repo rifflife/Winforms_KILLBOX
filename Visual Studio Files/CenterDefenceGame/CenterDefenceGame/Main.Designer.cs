@@ -29,15 +29,8 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            this.GameTick = new System.Windows.Forms.Timer(this.components);
             this.GameSpriteList = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
-            // 
-            // GameTick
-            // 
-            this.GameTick.Enabled = true;
-            this.GameTick.Interval = 1;
-            this.GameTick.Tick += new System.EventHandler(this.GameTick_Tick);
             // 
             // GameSpriteList
             // 
@@ -56,6 +49,7 @@
             this.Name = "Main";
             this.ShowIcon = false;
             this.Text = "KILL BOX";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ClientSizeChanged += new System.EventHandler(this.FormSizeOrLocationChanged);
             this.LocationChanged += new System.EventHandler(this.FormSizeOrLocationChanged);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Main_Paint);
@@ -68,8 +62,6 @@
 		}
 
 		#endregion
-
-		private System.Windows.Forms.Timer GameTick;
 		private System.Windows.Forms.ImageList GameSpriteList;
 	}
 }
