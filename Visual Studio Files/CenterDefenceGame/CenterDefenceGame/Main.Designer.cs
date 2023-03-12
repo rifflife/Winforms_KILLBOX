@@ -28,42 +28,42 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.GameTick = new System.Windows.Forms.Timer(this.components);
-			this.GameSpriteList = new System.Windows.Forms.ImageList(this.components);
-			this.SuspendLayout();
-			// 
-			// GameTick
-			// 
-			this.GameTick.Enabled = true;
-			this.GameTick.Interval = 1;
-			this.GameTick.Tick += new System.EventHandler(this.GameTick_Tick);
-			// 
-			// GameSpriteList
-			// 
-			this.GameSpriteList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-			this.GameSpriteList.ImageSize = new System.Drawing.Size(16, 16);
-			this.GameSpriteList.TransparentColor = System.Drawing.Color.Transparent;
-			// 
-			// Main
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(1184, 761);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Name = "Main";
-			this.ShowIcon = false;
-			this.Text = "KILL BOX";
-			this.ClientSizeChanged += new System.EventHandler(this.FormSizeOrLocationChanged);
-			this.LocationChanged += new System.EventHandler(this.FormSizeOrLocationChanged);
-			this.Paint += new System.Windows.Forms.PaintEventHandler(this.Main_Paint);
-			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
-			this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Main_KeyUp);
-			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Main_MouseDown);
-			this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Main_MouseUp);
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.GameTick = new System.Windows.Forms.Timer(this.components);
+            this.GameSpriteList = new System.Windows.Forms.ImageList(this.components);
+            this.SuspendLayout();
+            // 
+            // GameTick
+            // 
+            this.GameTick.Enabled = true;
+            this.GameTick.Interval = 1;
+            this.GameTick.Tick += new System.EventHandler(this.GameTick_Tick);
+            // 
+            // GameSpriteList
+            // 
+            this.GameSpriteList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.GameSpriteList.ImageSize = new System.Drawing.Size(16, 16);
+            this.GameSpriteList.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // Main
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "Main";
+            this.ShowIcon = false;
+            this.Text = "KILL BOX";
+            this.ClientSizeChanged += new System.EventHandler(this.FormSizeOrLocationChanged);
+            this.LocationChanged += new System.EventHandler(this.FormSizeOrLocationChanged);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Main_Paint);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Main_KeyUp);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Main_MouseDown);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Main_MouseUp);
+            this.ResumeLayout(false);
 
 		}
 

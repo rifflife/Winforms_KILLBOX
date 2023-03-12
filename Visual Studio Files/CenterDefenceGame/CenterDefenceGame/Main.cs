@@ -1,13 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Media;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +10,7 @@ using CenterDefenceGame.GameObject;
 
 namespace CenterDefenceGame
 {
-	public partial class Main : Form
+    public partial class Main : Form
 	{
 		// System
 		public bool IsDebugging = false;
@@ -95,7 +89,19 @@ namespace CenterDefenceGame
 			this.GameTick.Interval = 1;
 		}
 
-		protected override void OnPaintBackground(PaintEventArgs e)	{}
+		public Task update()
+        {
+			Thread.Sleep(1000);
+            while (true)
+            {
+                this.InvokeControl(() =>
+                {
+                    UpdateGame();
+                });
+            }
+        }
+
+        protected override void OnPaintBackground(PaintEventArgs e)	{}
 
 		# region Set Key Input
 
@@ -147,39 +153,44 @@ namespace CenterDefenceGame
 
 		private void GameTick_Tick(object sender, EventArgs e)
 		{
-			// Mouse Cursor
-			Cursor.Hide();
-			Text = "KILL BOX (202013207 최지욱)";
-			if (this.Focused)
-			{
-				this.Activate();
-				if(this.Manager.GameMouse.GetVirtualMouseMode())
-				{
-					this.MouseMovedAmount.X = Cursor.Position.X - this.InitializeMouseCursorPosition.X;
-					this.MouseMovedAmount.Y = Cursor.Position.Y - this.InitializeMouseCursorPosition.Y;
-					Cursor.Position = this.InitializeMouseCursorPosition;
-				}
-				else
-				{
-					this.MouseMovedAmount.X = 0;
-					this.MouseMovedAmount.Y = 0;
-				}
-			}
-			else
-			{
-				this.Manager.SetGameSituation(ESystemSituation.Pause);
-			}
+            //UpdateGame();
+        }
 
-			// Delta Set
-			this.DeltaTime = DateTime.Now - this.PreviousTime;
-			this.PreviousTime = DateTime.Now;
-			this.DeltaRatio = (this.DeltaTime.Milliseconds / this.DeltaConst);
+        public void UpdateGame()
+        {
+            // Mouse Cursor
+            Cursor.Hide();
+            Text = "KILL BOX (202013207 최지욱)";
+            if (this.Focused)
+            {
+                this.Activate();
+                if (this.Manager.GameMouse.GetVirtualMouseMode())
+                {
+                    this.MouseMovedAmount.X = Cursor.Position.X - this.InitializeMouseCursorPosition.X;
+                    this.MouseMovedAmount.Y = Cursor.Position.Y - this.InitializeMouseCursorPosition.Y;
+                    Cursor.Position = this.InitializeMouseCursorPosition;
+                }
+                else
+                {
+                    this.MouseMovedAmount.X = 0;
+                    this.MouseMovedAmount.Y = 0;
+                }
+            }
+            else
+            {
+                this.Manager.SetGameSituation(ESystemSituation.Pause);
+            }
 
-			// Game Update
-			this.Manager.Update(this.DeltaRatio, GameGraphics, this.MouseMovedAmount, this.PointToClient(Cursor.Position));
+            // Delta Set
+            this.DeltaTime = DateTime.Now - this.PreviousTime;
+            this.PreviousTime = DateTime.Now;
+            this.DeltaRatio = (this.DeltaTime.Milliseconds / this.DeltaConst);
 
-			this.Invalidate();
-		}
+            // Game Update
+            this.Manager.Update(this.DeltaRatio, GameGraphics, this.MouseMovedAmount, this.PointToClient(Cursor.Position));
+
+            this.Invalidate();
+        }
 		
 		private void Main_Paint(object sender, PaintEventArgs e)
 		{
@@ -196,5 +207,5 @@ namespace CenterDefenceGame
 			this.InitializeMouseCursorPosition.X = this.Location.X + this.ClientSize.Width  / 2;
 			this.InitializeMouseCursorPosition.Y = this.Location.Y + this.ClientSize.Height / 2;
 		}
-	}
+    }
 }

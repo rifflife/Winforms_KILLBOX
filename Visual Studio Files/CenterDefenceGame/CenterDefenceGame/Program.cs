@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -8,6 +9,8 @@ namespace CenterDefenceGame
 {
 	static class Program
 	{
+		private static Main _form;
+
 		/// <summary>
 		/// 해당 애플리케이션의 주 진입점입니다.
 		/// </summary>
@@ -16,7 +19,24 @@ namespace CenterDefenceGame
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Main());
+            _form = new Main();
+			Thread t = new Thread(Update);
+			t.IsBackground = false;
+			t.Start();
+            Application.Run(_form);
 		}
+
+		private static void Update()
+        {
+            Thread.Sleep(1000);
+            while (true)
+			{
+				_form.InvokeControl(() =>
+				{
+					_form?.UpdateGame();
+				});
+				Thread.Sleep(1);
+			}
+        }
 	}
 }
