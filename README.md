@@ -1,19 +1,20 @@
 # Winforms_KILLBOX
-This game was built using Winforms
+This game was built using WinForms.
 
-This is an assignment from my college. I made it in the first grade.
-And This is my first completed game.
+This is an assignment from my college.
+I made it in my first year. And this is my first completed game.
 
-So, When you look around my game code, you might feel it's really messy code.
-And you might feel it has really strange structure.
-So, please understand me.
+So, when you look at my game code, you might find it's really messy.
+You might also feel that it has a strange structure. So please understand me.
 
-All comments in code were written in Korean.
-And every explanations and in game text are also written in Korean.
-You can change every Korean text to English, But it's pretty messy.
-It's made for Korean college assignment.
-So I didn't make some kind of multi language structure.
-It's my big mistake, so please understand this problem.
+All comments in the code were written in Korean.
+Also, all explanations and in-game text are written in Korean.
+You can change all the Korean text to English, but it might get messy.
+It was created for a Korean college assignment,
+so I didn't implement a multi-language structure.
+It's my big mistake, so please understand this issue.
+
+But you know what? It's fun to play : )
 
 이 게임은 Winforms로 만들어졌습니다.
 이 게임은 대학 과제를 위해서 만들어졌습니다.
